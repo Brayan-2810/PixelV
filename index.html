@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIXEL V</title>
-    <link rel="shortcut icon" href="./IMG/favicon.svg" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
-    
-    <!-- ---importa o arquivoJavascript para a página -->
-     <script src="./script.js" defer></script>
+
+    <!-- Importa o arquivo javascript para a página -->
+    <script src="./script.js" defer></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -22,8 +22,7 @@
         <div class="banner">
             <header>
                 <div class="container-grid">
-
-                    <img src="./IMG/VersãoPositiva.svg" alt="Logo da empresa Pixel V">
+                    <img src="./img/VersãoPositiva.svg" alt="Logo da empresa Pixel V">
 
                     <nav id="menu" class="menu">
                         <a href="">Sobre</a>
@@ -33,19 +32,21 @@
                     </nav>
 
                     <button onclick="abreFechaMenu()">
-                        <!-- --------menu de hamburguer-------- -->
+                        <!-- Menu de hamburguer -->
+                        <!-- Icone de barras -->
                         <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                         </svg>
 
+                        <!-- Icone de X -->
                         <svg id="icone-x" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
-
+                        <!-- ------------------------------------------ -->
                     </button>
 
 
@@ -54,7 +55,6 @@
             </header>
 
             <div class="conteudo-banner">
-
                 <div class="texto-banner">
                     <p>"Design que transforma, Marcas que inspiram"</p>
                     <ul>
@@ -64,32 +64,35 @@
                         <li>Redes Sociais</li>
                     </ul>
                 </div>
+                <img src="./IMG/Modelo (1).png" alt="Modelo da pixel V">
 
-                <img src="./IMG/Modelo (1).png" alt="Modelo da Pixel V">
             </div>
-
         </div>
 
-        <section id="Sobre" class="container-grid">
-            <img src="./IMG/sobre.png" alt="Foto de uma pessoa trabalhando no escritorio da PIXEL V">
+        <section id="sobre" class="container-grid">
+            <img src="./img/sobre.png" alt="Foto de uma pessoa 
+            trabalhando no escritorio da PIXEL V">
 
             <div class="conteudo-sobre">
                 <div class="titulo">
                     <h2>Sobre</h2><span>a nossa agência</span>
                 </div>
-                <p>Somos uma agência de design sustentavel que une
+                <p>Somos uma agência de design sustentável que une
                     inovação, criatividade e responsabilidade
                     ambiental para criar marcas autênticas e
-                    impactantes. Nosso difernecial e transformar
-                    propósito em identidade visual, ajudando
+                    impactantes. Nosso diferencial é transfomar
+                    propósito em identidade visual, ajundando
                     empresas a comunicar sua visão sustentável de
-                    forma clara e envolvente.</p>
+                    forma clara e envolvente.
+                </p>
             </div>
+
         </section>
 
         <section id="parallax"></section>
 
-        <section id="servico" class="container-grid">
+        <section id="servicos" class="container-grid">
+
             <div class="titulo">
                 <span>Nossos</span>
                 <h2>Serviços</h2>
@@ -104,7 +107,7 @@
                         </path>
                     </svg>
                     <h3>Branding</h3>
-                    <p>Identidade Visual, Logotipo, Manual da Marca</p>
+                    <p>Identidade Visual, Logotipo, Manual da marca.</p>
                 </div>
 
                 <div class="card">
@@ -114,7 +117,7 @@
                             d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
                     </svg>
                     <h3>UI & UX</h3>
-                    <p>Design e desenvolvimento de landing pages</p>
+                    <p>Design e desenvolvimento de landing pages.</p>
                 </div>
 
                 <div class="card">
@@ -124,7 +127,7 @@
                             d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
                     </svg>
                     <h3>Marketing</h3>
-                    <p>Redes Sociais, Campanhas, E-mail marketing</p>
+                    <p>Redes Sociais, Campanhas, E-mail marketing.</p>
                 </div>
 
                 <div class="card">
@@ -135,7 +138,7 @@
                         <path
                             d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
                     </svg>
-                    <h3>AudioVIsual</h3>
+                    <h3>Audiovisual</h3>
                     <p>Produções Audiovisuais, ensaio fotográfico</p>
                 </div>
 
@@ -145,8 +148,8 @@
                             d="M176,112H152a8,8,0,0,1,0-16h24a8,8,0,0,1,0,16ZM104,96H96V88a8,8,0,0,0-16,0v8H72a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16ZM241.48,200.65a36,36,0,0,1-54.94,4.81c-.12-.12-.24-.24-.35-.37L146.48,160h-37L69.81,205.09l-.35.37A36.08,36.08,0,0,1,44,216,36,36,0,0,1,8.56,173.75a.68.68,0,0,1,0-.14L24.93,89.52A59.88,59.88,0,0,1,83.89,40H172a60.08,60.08,0,0,1,59,49.25c0,.06,0,.12,0,.18l16.37,84.17a.68.68,0,0,1,0,.14A35.74,35.74,0,0,1,241.48,200.65ZM172,144a44,44,0,0,0,0-88H83.89A43.9,43.9,0,0,0,40.68,92.37l0,.13L24.3,176.59A20,20,0,0,0,58,194.3l41.92-47.59a8,8,0,0,1,6-2.71Zm59.7,32.59-8.74-45A60,60,0,0,1,172,160h-4.2L198,194.31a20.09,20.09,0,0,0,17.46,5.39,20,20,0,0,0,16.23-23.11Z">
                         </path>
                     </svg>
-                    <h3>Gameficação</h3>
-                    <p>Engajamos seu público com mêcanicas de jogos</p>
+                    <h3>Gamificação</h3>
+                    <p>Engajamos seu público com mecânicas de jogos</p>
                 </div>
 
                 <div class="card">
@@ -156,17 +159,17 @@
                         </path>
                     </svg>
                     <h3>Animações</h3>
-                    <p>Damos a vida à sua marca com animações envolventes.</p>
+                    <p>Damos vida à sua marca com animações envolventes</p>
                 </div>
 
                 <div class="linha-roxa"></div>
-            </div>
 
+            </div>
         </section>
 
         <section id="cases">
             <div class="titulo">
-                <h2>Cases</h2><span>de sucesso</span>
+                <h2>Cases</h2><span>de Sucesso</span>
             </div>
 
             <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
@@ -210,20 +213,22 @@
 
             <form action="">
                 <div class="campo">
-                    <label for="campo-nome">Qual é seu nome?</label>
+                    <label for="campo-nome">Qual é o seu nome?</label>
                     <input type="text" id="campo-nome" placeholder="Digite o seu nome...">
                 </div>
 
                 <div class="campo">
-                    <label for="campo-email">Em qual e-mail podemos te responder?</label>
-                    <input type="email" id="campo-email" placeholder="Digite seu e-mail...">
-
-
+                    <label for="campo-email">Em qual e-mail podemos
+                        te responder?</label>
+                    <input type="email" id="campo-email" placeholder="Digite seu e-mail..">
                 </div>
+
                 <div class="campo-descricao">
-                    <label for="campo-texto">Descreva um pouco da sua empresa, e também o problema que está procurando
-                        solucionar</label>
-                    <textarea id="campo-texto" placeholder="Descreva sua empresa e o problema que enfrneta" cols="30"
+                    <label for="campo-texto">Descreva um pouco da sua
+                        empresa, e também o problema que está procurando
+                        solucionar.
+                    </label>
+                    <textarea id="campo-texto" placeholder="Descreva sua empresa e o problema que enfrenta..." cols="30"
                         rows="10"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
@@ -233,10 +238,10 @@
 
     <footer>
         <div class="container-grid roda-pe">
-            <img src="./IMG/VersãoPositiva.svg" alt="LOgo da Pixel V">
+            <img src="./img/VersãoPositiva.svg" alt="Logo da Pixel V">
 
             <div class="redes-sociais">
-                <p>Estamos também nas redes Sociais</p>
+                <p>Estamos também nas redes sociais</p>
 
                 <div class="icones-redes">
                     <a href="">
@@ -273,10 +278,15 @@
         </div>
     </footer>
 
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

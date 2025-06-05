@@ -1,41 +1,41 @@
-//Busca um elemento no HTML e slava em uma variavel
+//Busca um elemento no HTML e salva em uma variavel 
 let menu = document.getElementById("menu")
 let iconeBarras = document.getElementById("icone-barras")
 let iconeX = document.getElementById("icone-x")
 
-//Função que vai abrir e fechar o menu
+//Função que vai abrir e fechar o menu 
 function abreFechaMenu(){
-
-    //Se o menu está fechado
-    if (menu.classList.contains("menu-fechado")) {
-        //Abrir menu
+    
+    //Se o menu está fechado 
+    if(menu.classList.contains("menu-fechado")){
+        //Abrir o menu
         menu.classList.remove("menu-fechado")
 
-
-        //mostra icone X
+        //Mostra icone X
         iconeX.style.display = "inline"
 
-        //Esconder icone Barras
+        //Esconder o icone Barras
         iconeBarras.style.display = "none"
     }
     //Senão
-    else {
-        //fechar o menu
+    else{
+        //Fechar o menu
         menu.classList.add("menu-fechado")
 
-        //esconder icone x
+        //Esconder icone x
         iconeX.style.display = "none"
 
-        //mostrar icone barras
+        //Mostrar icone barras
         iconeBarras.style.display = "inline"
     }
 }
 
 onresize = () => {
-    menu.classList.remove("menu-Fechado")
+    menu.classList.remove("menu-fechado")
 
-    //mostrar icone X
+    //Mostrar icone X
     iconeX.style.display = "inline"
 
+    //Esconder icone barras
     iconeBarras.style.display = "none"
 }

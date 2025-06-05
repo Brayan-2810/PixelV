@@ -1,5 +1,5 @@
 /* Reset CSS */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,54 +7,57 @@
 
 @font-face {
     font-family: "Recursive";
-    src: url(./Fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 :root {
-    --branco: #ffffff;
+    --branco: #FFFFFF;
     --preto: #000000;
-    --verde-pixelv: #00cf21;
-    --roxo-pixelv: #4700cf;
-    --fundo-site: #f3f2f2;
-    --contato: #e5e5e5;
+    --verde-pixelV: #00C621;
+    --roxo-pixelV: #4700CF;
+    --fundo-site: #F3F2F2;
+    --contato: #E5E5E5;
 }
 
-.container-grid {
+.container-grid{
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-body {
+body{
     overflow-x: hidden;
     background-color: var(--fundo-site);
 }
 
-.titulo {
+.titulo{
     display: flex;
     font-family: "Recursive", sans-linear-bold;
-    font-size: 35px;
     font-weight: 600;
+    font-size: 35px;
 }
 
-.titulo h2 {
+.titulo h2{
     color: var(--branco);
     margin-bottom: 0;
-    background-color: var(--roxo-pixelv);
+    background-color: var(--roxo-pixelV);
     border-radius: 20px;
-    /* padding-top: 10px; */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px; */
     padding: 10px 18px;
 }
 
-.titulo span {
-    color: var(--roxo-pixelv);
-    border-bottom: solid 3px var(--verde-pixelv);
+.titulo span{
+    color: var(--roxo-pixelV);
+    border-bottom: solid 3px var(--verde-pixelV);
 }
 
-/* -------Header------- */
+/* ------------------Header----------------- */
 
-.banner {
-    background-image: url("./IMG/Banner.png");
+.banner{
+    background-image: url("./img/Banner.png");
     height: 120vh;
     background-repeat: no-repeat;
     background-position: 0 -10px;
@@ -64,31 +67,31 @@ body {
     justify-content: space-between;
 }
 
-header {
+header{
     height: 165px;
 }
 
-header .container-grid {
+header .container-grid{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header img {
+header img{
     width: 234px;
 }
 
-.menu {
+.menu{
     max-width: 700px;
     width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-.menu a {
+.menu a{
     font-size: 20px;
-    color: white;
+    color: var(--branco);
     font-family: "Recursive", sans-linear;
 
     text-decoration: underline transparent;
@@ -97,22 +100,22 @@ header img {
     transition: text-decoration 500ms ease;
 }
 
-.menu a:hover {
-    text-decoration-color: var(--verde-pixelv);
+.menu a:hover{
+    text-decoration-color: var(--verde-pixelV);
 }
 
-.conteudo-banner {
+.conteudo-banner{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.conteudo-banner img {
+.conteudo-banner img{
     max-width: 380px;
     width: 50%;
 }
 
-.conteudo-banner p {
+.conteudo-banner p{
     font-size: 26px;
     font-family: "Recursive", sans-linear;
     color: var(--branco);
@@ -120,19 +123,20 @@ header img {
     margin-bottom: 100px;
 }
 
-.conteudo-banner ul {
+.conteudo-banner ul{
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Recursive", sans-linear-bold;
-    color: var(--verde-pixelv);
+    color: var(--verde-pixelV);
     list-style-type: none;
     padding: 0;
 }
 
-/* -------Sobre------- */
 
-#Sobre {
+/* ----------------SOBRE---------------- */
+
+#sobre{
     display: flex;
     align-items: center;
     gap: 80px;
@@ -140,32 +144,31 @@ header img {
     margin-bottom: 120px;
 }
 
-#Sobre img {
+#sobre img{
     max-width: 460px;
     width: 40%;
     border-radius: 40px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-
 }
 
-#sobre h2 {
+#sobre h2{
     margin-right: 5px;
 }
 
-#Sobre p {
+#sobre p{
     font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
 }
 
-/* -------Parallax------- */
+/* -----------------Parallax---------------- */
 
-#parallax {
+#parallax{
     height: 250px;
-    /* background-image: url(./IMG/parallax.svg); */
+    /* background-image: url(./img/parallax.svg); */
 
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./IMG/parallax.svg);
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
 
     margin-bottom: 120px;
 
@@ -174,40 +177,40 @@ header img {
     background-size: 30%;
 }
 
-/* -------Serviços------- */
-
-#servico {
+/* --------------Serviços-------------------- */
+#servicos{
     margin-bottom: 120px;
 }
 
-#servico .titulo {
+#servicos .titulo{
     justify-content: center;
     margin-bottom: 55px;
 }
 
-#servico h2 {
+#servicos h2{
     margin-left: 5px;
 }
 
-.container-cards {
+.container-cards{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+
 }
 
-.linha-roxa {
+.linha-roxa{
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%,
-            rgba(71, 0, 207, 1) 100%);
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0% ,
+     rgba(71, 0, 207, 1) 100%);
     position: absolute;
     z-index: -1;
     top: calc(50% - 125px);
 }
 
-#servico .card {
+#servicos .card{
     width: 300px;
     margin: 20px;
     padding: 40px 20px;
@@ -222,45 +225,45 @@ header img {
     justify-content: center;
 }
 
-#servico .card h3 {
+#servicos .card h3{
     font-size: 24px;
     margin: 5px 0 30px;
-    color: var(--roxo-pixelv);
+    color: var(--roxo-pixelV);
     font-family: "Recursive", sans-linear-bold;
     text-align: center;
 }
 
-#servico .card p {
+#servicos .card p{
     font-family: "Recursive", sans-linear;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-#servico .card svg {
-    color: var(--roxo-pixelv);
+#servicos .card svg{
+    color: var(--roxo-pixelV);
     height: 75px;
 }
 
-#servico .card:hover {
-    border: solid 3px var(--verde-pixelv);
+#servicos .card:hover{
+    border: solid 3px var(--verde-pixelV);
 }
 
-#servico .card:hover svg {
-    fill: var(--verde-pixelv);
+#servicos .card:hover svg{
+    fill: var(--verde-pixelV)
 }
 
-#servico .card:hover h3 {
-    color: var(--verde-pixelv);
+#servicos .card:hover h3{
+    color: var(--verde-pixelV);
 }
 
-/* -------Cases------- */
+/* -----------------Cases--------------------- */
 
-#cases h2 {
+#cases h2{
     margin-right: 5px;
 }
 
-#cases {
+#cases{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,17 +271,17 @@ header img {
     margin-bottom: 120px;
 }
 
-#cases img {
+#cases img{
     height: 300px;
     border-radius: 40px;
 }
 
-#meuCarrossel {
+#meuCarrossel{
     max-width: 1170px;
     width: 90%;
 }
 
-/* --------Contato------- */
+/* ---------- Contato ----------- */
 
 #contato {
     text-align: center;
@@ -286,17 +289,16 @@ header img {
     margin-top: 100px;
 }
 
-#contato .titulo {
+#contato .titulo{
     justify-content: center;
     margin-bottom: 55px;
-
 }
 
-#contato h2 {
+#contato h2{
     margin-left: 5px;
 }
 
-#contato form {
+#contato form{
     max-width: 980px;
     width: 90%;
 
@@ -306,7 +308,8 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 3px var(--roxo-pixelv);
+
+    border: solid 3px var(--roxo-pixelV);
     border-radius: 40px;
     background-color: var(--contato);
 
@@ -315,7 +318,7 @@ header img {
     font-size: 17px;
 }
 
-.campo {
+.campo{
     width: 60%;
     text-align: left;
 
@@ -337,7 +340,7 @@ header img {
     margin-bottom: 30px;
 }
 
-.campo input {
+.campo input{
     height: 40px;
 
     color: var(--preto);
@@ -350,7 +353,7 @@ header img {
     outline: none;
 }
 
-.campo-descricao textarea {
+.campo-descricao textarea{
     color: var(--preto);
     background-color: var(--branco);
 
@@ -363,31 +366,31 @@ header img {
 }
 
 .campo label,
-.campo-descricao label {
+.campo-descricao label{
     margin-bottom: 15px;
 }
 
 .campo input,
-.campo-descricao textarea {
+.campo-descricao textarea{
     font-family: "Recursive", sans-linear;
     font-size: 17px;
 }
 
 .campo input::placeholder,
-.campo-descricao textarea::placeholder {
-    color: #a0a0a0;
+.campo-descricao textarea::placeholder{
+    color: #A0A0A0;
 }
 
 .campo input:focus,
-.campo-descricao textarea:focus {
-    outline: 2px solid var(--verde-pixelv);
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--verde-pixelV);
 }
 
-#contato form button {
+#contato form button{
     height: 40px;
     width: 60%;
 
-    background-color: var(--roxo-pixelv);
+    background-color: var(--roxo-pixelV);
     color: var(--branco);
 
     border: none;
@@ -400,24 +403,24 @@ header img {
     text-transform: uppercase;
     cursor: pointer;
 
-    transform: background-color 500ms;
+    transition: background-color 500ms;
 }
 
-#contato form button:hover {
-    background-color: var(--verde-pixelv);
+#contato form button:hover{
+    background-color: var(--verde-pixelV);
 }
 
-/* --------Footer-------- */
-footer {
+/* ---------- Footer ------------- */
+footer{
     height: 250px;
-    background-image: url(./IMG/footer.png);
+    background-image: url(./img/footer.png);
 }
 
-footer img {
-    height: 80px;
+footer img{
+    height: 90px;
 }
 
-footer .container-grid {
+footer .container-grid{
     height: 100%;
 
     display: flex;
@@ -425,8 +428,7 @@ footer .container-grid {
     align-items: center;
 }
 
-
-.redes-sociais {
+.redes-sociais{
     height: 50%;
 
     display: flex;
@@ -435,7 +437,7 @@ footer .container-grid {
     align-items: flex-end;
 }
 
-.redes-sociais p {
+.redes-sociais p{
     color: var(--branco);
 
     font-family: "Recursive", sans-linear;
@@ -449,60 +451,55 @@ footer .container-grid {
     justify-content: space-between;
 }
 
-.icones-redes a {
+.icones-redes a{
     color: var(--branco);
 }
 
-.icones-redes a:hover {
-    color: var(--verde-pixelv);
+.icones-redes a:hover{
+    color: var(--verde-pixelV);
 }
+ /* ------- Menu Hamburguer ------------------ */
 
-/* ---------menu hamburguer----------- */
-.menu-fechado {
+.menu-fechado{
     display: none;
 }
 
 #icone-barras,
-#icone-x {
+#icone-x{
     display: none;
 }
 
-
-
-
-/* -------Responsividade------- */
-@media screen and (max-width: 1024px) {
-
+/* ------------- Responsividade ---------------- */
+@media screen and (max-width: 1024px){
     .titulo,
-    .titulo h2 {
+    .titulo h2{
         font-size: 22px;
         font-family: "Recursive", sans-linear;
     }
 
-    .titulo span {
+    .titulo span{
         line-height: 45px;
     }
 
-    .menu {
+    .menu{
         justify-content: space-evenly;
     }
 
-    #sobre p {
+    #sobre p{
         font-size: 16px;
     }
 
-    #servicos .card svg {
+    #servicos .card svg{
         height: 55px;
     }
-
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     header {
         position: relative;
     }
 
-    header button {
+    header button{
         width: 50px;
 
         background: none;
@@ -510,10 +507,9 @@ footer .container-grid {
 
         cursor: pointer;
         display: unset;
-
     }
 
-    header svg {
+    header svg{
         fill: var(--branco);
     }
 
@@ -535,27 +531,27 @@ footer .container-grid {
         z-index: 1;
     }
 
-    .conteudo-banner img {
+    .conteudo-banner img{
         display: none;
     }
 
-    .conteudo-banner {
+    .conteudo-banner{
         text-align: center;
     }
 
-    #sobre img {
+    #sobre img{
         display: none;
     }
 
-    .titulo {
+    .titulo{
         justify-content: center;
     }
 
-    #cases img {
+    #cases img{
         height: 200px;
     }
 
-    footer .roda-pe {
+    footer .roda-pe{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -563,45 +559,40 @@ footer .container-grid {
         gap: 20px;
     }
 
-    footer img {
+    footer img{
         height: 80px;
     }
 
-    .redes-sociais {
+    .redes-sociais{
         align-items: center;
         justify-content: center;
     }
+
+    .redes-sociais svg{
+        height: 35px;
+    }
 }
 
-@media screen and (max-width: 320px) {
-    nav.menu {
+@media screen and (max-width: 320px){
+    nav.menu{
         width: 260px;
     }
 
-    header img {
+    header img{
         width: 185px;
     }
 
-    .conteudo-banner p {
+    .conteudo-banner p{
         font-size: 24px;
         width: 310px;
     }
 
-    .conteudo-banner ul {
+    .conteudo-banner ul{
         font-size: 25px;
     }
 
     .titulo,
-    .titulo h2 {
+    .titulo h2{
         font-size: 20px;
     }
-
-
-
-
-
-
-
-
-
 }
